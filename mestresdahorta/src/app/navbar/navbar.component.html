@@ -1,0 +1,102 @@
+<header class="menu text-titulo fixed-top shadow-sm ">
+
+    <nav class="menu-cabecalho navbar navbar-expand-lg d-flex flex-column pb-0 ">
+
+        <div class="menu-componentes d-flex w-100 h-100 ">
+
+            <nav class="menu-btn-hamburguer navbar navbar-light d-lg-none">
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+            </nav> <!-- menu-hamburguer-button -->
+
+            <div class="menu-logo mr-5 ml-5 d-none d-lg-block ">
+                <a class="navbar-brand" href="#">
+
+                    <img src="../../assets/img/logo.png" id="Logo-nav" />
+
+                </a>
+            </div> <!-- menu-logo -->
+
+            <div class="menu-pesquisar d-flex justify-content-center bd-highlight w-100">
+                <div class="pesquisar-form form-inline">
+
+                    <input id="barra-pesquisa" class="form-input form-control shadow-none" type="search"
+                        placeholder="Procurando algo?" aria-label="Search" name="barra-pesquisa"
+                        [(ngModel)]="barraPesquisa">
+
+                    <button id="buscar-btn" class="form-button btn bg-dark shadow-none" type="button"
+                        (click)="pesquisarNav()">
+
+                        <fa-icon [icon]="faPesquisar" class="faPesquisar fa-1x text-light"></fa-icon>
+
+                    </button>
+                </div>
+            </div> <!-- menu-pesquisar -->
+
+            <div class="menu-icones d-flex justify-content-center align-items-center  w-25">
+                <div class="icones-perfil  w-50 mr-2">
+                    <button type="button" class="btn-perfil btn bg-transparent shadow-none w-100"
+                        routerLink='/meu-perfil' *ngIf="btnSair()">
+                        <fa-icon [icon]="faUsuario" class="faUsuario fa-1x text-dark"></fa-icon>
+                        <span class="span-perfil"> Perfil </span>
+                    </button>
+                </div>
+
+                <div class="icones-carrinho w-50 ">
+                    <button type="button" class="btn-carrinho btn bg-transparent shadow-none w-100"
+                        (click)="teste('cesta')" *ngIf="btnSair()">
+                        <fa-icon [icon]="faCarrinho" class="faCarrinho fa-1x text-dark"></fa-icon>
+                    </button>
+                </div>
+            </div> <!-- menu-icones-->
+
+        </div> <!-- menu-componentes -->
+
+        <div class="menu-componentes-itens border-top w-100">
+
+            <div class="menu-hamburguer-itens collapse navbar-collapse " id="navbarResponsive">
+
+                <ul class="navbar-nav mx-auto ">
+                    <li class="nav-item pr-4 pl-4">
+                        <a class="nav-link text-titulo text-uppercase" routerLink='/home'>
+                            Início<span class="sr-only">(página atual)</span></a>
+                    </li>
+                    <li class="nav-item pr-4 pl-4 ">
+                        <a class="nav-link text-titulo text-uppercase" routerLink='/quem-somos'>QUEM
+                            SOMOS</a>
+                    </li>
+                    <li class="nav-item pr-4 pl-4 ">
+                        <a class="nav-link text-titulo text-uppercase" routerLink='/produtos'>PRODUTOS</a>
+                    </li>
+                    <div *ngIf="btnCadastro()">
+                        <li class="nav-item  pr-4 pl-4">
+                            <a class="nav-link text-titulo text-uppercase" routerLink='/cadastro'>CADASTRO</a>
+                        </li>
+                    </div>
+
+                    <li class="nav-item pr-4 pl-4 ">
+                        <a class="nav-link text-titulo text-uppercase" routerLink='/contato'>CONTATO</a>
+                    </li>
+
+                    <div *ngIf="btnAdm()">
+                        <li class="nav-item  pr-4 pl-4">
+                            <a class="nav-link text-titulo text-uppercase" routerLink='/administrador'>ADM</a>
+                        </li>
+                    </div>
+
+                    <div *ngIf="btnSair()">
+                        <li class="nav-item  pr-4 pl-4">
+                            <a class="nav-link text-titulo text-uppercase" (click)="sair()">SAIR</a>
+                        </li>
+                    </div>
+
+                </ul>
+
+
+            </div> <!-- menu-hamburguer-itens -->
+        </div> <!-- menu-componentes-itens -->
+
+    </nav> <!-- menu-cabecalho -->
+</header> <!-- menu-->

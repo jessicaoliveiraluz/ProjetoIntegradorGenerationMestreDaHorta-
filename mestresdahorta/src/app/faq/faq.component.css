@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Fredoka+One&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+button{
+    font-family: 'Fredoka One', cursive;  
+    cursor: pointer;
+    color: #A2A2A2;
+    margin-bottom: 12px;
+    height: 50px;
+    border-color: #dcdcdc;    
+}
+
+button:hover{
+        color:#27B7A8;
+        box-shadow: 1px 1px 4px gray;
+        font-weight: 700;
+        transition: color 0.5s;
+}
+
+.imagem{
+    max-width: 25%;
+    /* max-height: 25%; */
+}
+
+#todos-cards{
+    margin-top:-230px;
+    width: 100%;
+}
+
+.perguntas-frequentes{
+    font-size: 63px;
+    color: #575151;
+    font-family: 'Fredoka One', cursive; 
+}
+
+.resposta{
+    font-family: 'Oxygen', sans-serif;
+    cursor: pointer;
+    color:  black;
+}
+
+.card{
+    background-color: #F9FBF9;
+    border: none;
+}
+
+.borda {
+    border: none;
+}
+
+/* 
+h2 {
+    font-family: Arial, Verdana;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #091f2f;
+    text-transform: uppercase;
+}
+.accordion-section .panel-default > .panel-heading {
+    border: 0;
+    background: #f4f4f4;
+    padding: 0;
+    
+}
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'Fredoka One', cursive;
+    font-style: normal;
+    font-size: 3rem;
+    content: "\f106";
+    color: #1f7de2;
+    float: right;
+    margin-top: -12px;
+    cursor: pointer
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "\f107";
+}
+.accordion-section .panel-default .panel-body {
+    font-size: 1.2rem;
+} */
+
+.container{
+    margin-top: 190px;
+}
+
+.btn{
+    cursor: pointer;  
+}
+
+@media only screen and (max-width: 991px){
+    .container{
+        margin-top: 90px;
+    }
+    
+    .imagem{
+        padding-top: 100px;
+        margin-left: -50px;
+        max-width: 40%;
+        /* max-height: 25%; */
+    }
+    
+    #todos-cards{
+        margin-top:-280px;
+        width: 100%;
+    }
+
+    .tamanho-card{
+        width: 500px;
+    }
+
+    button{
+        font-size: 19px;
+    }
+    
+}
+
+@media only screen and (max-width: 808px){
+    .container{
+        margin-top: 80px;
+    }
+    
+    .imagem{
+        padding-top: 100px;
+        margin-left: -5px;
+        max-width: 30%;
+        /* max-height: 25%; */
+    }
+    
+    #todos-cards{
+        margin-top:-280px;
+        width: 100%;
+    }
+
+    .tamanho-card{
+        margin-right: 80px;
+        width: 470px;
+    }
+
+    button{
+        font-size: 18px;
+    }
+    
+}
+
+@media only screen and (max-width: 767px){
+    .container{
+        margin-top: 72px;
+    }
+
+    .perguntas-frequentes{
+        font-size: 48px;
+    }
+    
+    .imagem{
+        padding-top: 100px;
+        margin-left: -80px;
+        max-width: 35%;
+        /* max-height: 25%; */
+    }
+    
+    #todos-cards{
+        margin-top:-275px;
+        width: 100%;
+    }
+
+    .tamanho-card{
+        margin-left: 25px;
+        width: 470px;
+    }
+
+    button{
+        font-size: 18px;
+    }
+    
+}
+
+@media only screen and (max-width: 677px){
+      .imagem{
+        padding-top: 100px;
+        margin-left: -55px;
+        max-width: 35%;
+        /* max-height: 25%; */
+    }
+    
+    #todos-cards{
+        margin-top:-250px;
+        width: 100%;
+    }
+
+    .tamanho-card{
+        margin-left: 25px;
+        width: 450px;
+    }
+   
+}
+
+@media only screen and (max-width: 635px){
+    .imagem{
+      padding-top: 100px;
+      margin-left: -40px;
+      max-width: 32%;
+  }
+  
+  #todos-cards{
+      margin-top:-250px;
+      width: 100%;
+  }
+
+  .tamanho-card{
+      margin-left: 25px;
+      width: 430px;
+  }
+
+  button{
+    font-size: 17px;
+}
+ 
+}
+
+@media only screen and (max-width: 598px){
+    .imagem{
+      padding-top: 100px;
+      margin-left: -35px;
+      max-width: 30%;
+  }
+  
+  #todos-cards{
+      margin-top:-250px;
+      width: 100%;
+  }
+
+  .tamanho-card{
+      margin-left: 20px;
+      width: 430px;
+  }
+
+  button{
+    font-size: 17px;
+}
+ 
+}
+
+
+@media only screen and (max-width: 575px){
+    .imagem{
+      padding-top: 10px;
+      margin-left: 187px;
+      max-width: 40%;
+  }
+  
+  #todos-cards{
+      margin-top:50px;
+      width: 100%;
+  }
+
+  .tamanho-card{
+      margin-right: 53px;
+      width: 440px;
+  }
+
+  button{
+    font-size: 17px;
+}
+ 
+}
+
+@media only screen and (max-width: 561px){
+   .tamanho-card{
+      margin-right: 45px;
+  }
+}
+
+@media only screen and (max-width: 545px){
+    .tamanho-card{
+       margin-right: 38px;
+   }
+ }
+
+ @media only screen and (max-width: 539px){
+    .tamanho-card{
+        margin-right: 34px;
+   }
+ }
+
+ @media only screen and (max-width: 525px){
+    .tamanho-card{
+        margin-right: 27px;
+   }
+ }
+
+ @media only screen and (max-width: 515px){
+    .tamanho-card{
+        margin-right: 20px;
+   }
+ }
+
+ @media only screen and (max-width: 500px){
+    .imagem{
+        margin-left: 167px;
+    }
+
+    .tamanho-card{
+        margin-right: 14px;
+   }
+ }
+
+ @media only screen and (max-width: 490px){
+    .tamanho-card{
+        margin-right: 10px;
+   }
+ }
+
+ @media only screen and (max-width: 480px){
+    .tamanho-card{
+        margin-right: 5px;
+   }
+ }
+
+ @media only screen and (max-width: 470px){
+    .tamanho-card{
+        margin-right: 1px;
+   }
+ }
+
+@media only screen and (max-width: 425px){
+    .container{
+        margin-top: 62px;
+    }
+
+    .perguntas-frequentes{
+        font-size: 40px;
+    }
+
+    .imagem{
+      padding-top: 17px;
+      margin-left: 112px;
+      max-width: 50%;
+  }
+  
+  #todos-cards{
+      margin-top:45px;
+      width: 100%;
+  }
+
+  .tamanho-card{
+      margin-right: -2px;
+      width: 400px;
+  }
+
+  button{
+    font-size: 17px;
+    height: 65px;
+}
+ 
+} 
+
+@media only screen and (max-width: 375px){
+    .container{
+        margin-top: 48px;
+    }
+
+    .perguntas-frequentes{
+        font-size: 38px;
+    }
+
+    .imagem{
+      padding-top: 2px;
+      margin-left: 122px;
+      max-width: 42%;
+  }
+  
+  #todos-cards{
+      margin-top:35px;
+      width: 100%;
+  }
+
+  .tamanho-card{
+      margin-right: -3.2px;
+      width: 350px;
+  }
+
+  button{
+    font-size: 17px;
+    height: 65px;
+}
+ 
+}
+
+@media only screen and (max-width: 360px){
+  button{
+    font-size: 16px;
+    height: 60px;
+    width: 90%;
+    margin-left: 25px;
+  }
+} 
+
+@media only screen and (max-width: 320px){
+    button{
+      height: 60px;
+      width: 88%;
+      margin-left: 48px;
+    }
+  } 

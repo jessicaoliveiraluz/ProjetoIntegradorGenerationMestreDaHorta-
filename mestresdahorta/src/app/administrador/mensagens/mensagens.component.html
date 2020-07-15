@@ -1,0 +1,37 @@
+<div class="container text-geral">
+
+    <div class="botoes mb-5">
+        <h2 class=" text-center text-titulo mb-3">Administrador</h2>
+        <div class="d-flex">
+            <button class="btn btn-outline-dark    flex-fill mb-2 mr-2"
+                [routerLink]="['/administrador/usuarios']">Usuários</button>
+            <button class="btn btn-outline-dark flex-fill   mb-2 mr-2"
+                [routerLink]="['/administrador/produtos']">Produtos</button>
+            <button class="btn btn-outline-dark flex-fill active mb-2"
+                [routerLink]="['/administrador/mensagens']">Mensagens</button>
+        </div>
+    </div>
+    <p class="display-4 mb-4 text-center text-titulo">Mensagens dos usuários</p>
+    <div class="card mb-4" *ngFor="let contatos of  listaContatos">
+        <div class="card-header">
+            <span class="titulo-card">Id:</span> {{contatos.id}}
+        </div>
+        <div class="card-header">
+            <span>Nome: </span> {{contatos.nome}}
+        </div>
+        <div class="card-header">
+            <span>E-mail: </span>{{contatos.email}}
+        </div>
+        <div class="card-header">
+            <span>Telefone: </span>{{contatos.telefone}}
+        </div>
+        <div class="card-body">
+            <span>Mensagem: </span>{{contatos.mensagem}}
+        </div>
+        <div>
+            <button type="button" class="btn  btn-danger w-100 mt-3"
+                [routerLink]="['/administrador/mensagens/deletar', contatos.id]">Apagar</button>
+        </div>
+    </div>
+
+</div>

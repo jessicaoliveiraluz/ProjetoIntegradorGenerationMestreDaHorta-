@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+p{
+    font-family: 'Fredoka One', cursive;
+
+}
+
+
+.topo {
+    margin-top: 4em;
+}
+
+div {
+    font-family: 'Oxygen', sans-serif;
+
+}

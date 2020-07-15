@@ -1,0 +1,22 @@
+<div class="container mb-5 text-geral">
+
+    <h1 class="display-4 botoes text-titulo">Deletar Usuário</h1>
+
+    <div class="card-group">
+        <div class="card-body">
+            <h5 class="card-title">Nome : {{usuario.nome}} </h5>
+            <h6 class="card-text text-muted">ID : {{usuario.id}}</h6>
+            <p class="card-text">E-mail : {{usuario.email}} </p>
+            <!-- <p class="card-text">Senha : {{usuario.senha}} </p> -->
+        </div> <!-- card-body -->
+    </div> <!-- card-group -->
+
+    <h5 class="display-6 text-titulo">Tem certeza?</h5>
+
+    <div>
+        <button class="btn btn-outline-danger mr-3 " (click)="btnSim()">Sim</button>
+        <button class="btn btn-outline-success" (click)="btnNao()">Nao</button>
+    </div> <!-- botoes -->
+
+
+</div> <!-- container -->

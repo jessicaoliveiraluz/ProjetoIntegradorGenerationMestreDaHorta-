@@ -1,0 +1,45 @@
+<div class="container text-geral">
+
+    <div class="row botoes">
+
+        <div class="col-md-6">
+
+            <h1 class="display-4 mb-5 text-titulo">Editar</h1>
+
+            <div>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Nome do produto"
+                        [(ngModel)]="produto.nome">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputDescricao">Descrição</label>
+                    <input type="text" class="form-control" id="exampleInputDescricao" placeholder="Descrição"
+                        [(ngModel)]="produto.descricao">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFoto">Foto</label>
+                    <input type="text" class="form-control" id="exampleInputFoto" placeholder="Foto"
+                        [(ngModel)]="produto.foto">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPreco">Preço</label>
+                    <input type="text" class="form-control" id="exampleInputPreco" placeholder="Preço"
+                        [(ngModel)]="produto.preco">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputQtdEstoque">Quantidade em estoque</label>
+                    <input type="text" class="form-control" id="exampleInputQtdEstoque"
+                        placeholder="Quantidade em estoque" [(ngModel)]="produto.qtdEstoque">
+                </div>
+                <div class="d-flex justify-content-between mt-3 mb-5">
+                    <button type="button" class="btn btn-outline-success" (click)="salvar()">Editar</button>
+                    <button type="button" class="btn btn-outline-danger" (click)="cancelar()">Cancelar</button>
+                </div>
+            </div> <!-- formulario -->
+
+        </div> <!-- col -->
+
+    </div> <!-- row -->
+
+</div> <!-- container -->

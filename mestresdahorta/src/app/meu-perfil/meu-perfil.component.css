@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Fredoka+One&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');;
+
+/* Fundo da página */
+.fundo-perfil{
+    background-color: #F9FBF9;
+    font-family: 'Oxygen', sans-serif;
+    filter: grayscale(1.0) opacity(0.7);
+    padding-bottom: 5px;
+}
+
+/* PERFIL */
+.perfil{
+    padding-top: 225px;
+    padding-bottom: 30px;
+    font-size: 65px;
+    font-family: 'Fredoka One', cursive;  
+    color: #8BA96B;
+}
+
+.nome-sobrenome{
+    font-size: 22px;
+}
+
+#botao-editar:hover{
+    background-color: #27B7A8 ;
+    box-shadow: 0 0 5px  #27B7A8 !important;    
+}
+
+.sub-texto{
+    font-family: 'Fredoka One', cursive;
+}
+
+/* BORDA */
+.linha {
+    border-top: 1px solid #575151;
+    list-style-type: none;
+}
+
+/* MINHA CESTA */
+.minha-cesta{
+    font-size: 65px;
+    font-family: 'Fredoka One', cursive;  
+    color: #8BA96B;
+}
+
+.texto-cesta a:hover{
+    color: #8BA96B ;
+    box-shadow: 0 0 5px  #8BA96B!important;  
+}
+
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1000px) {
+    .perfil{
+        font-size: 45px;
+    }
+
+    .minha-cesta{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .perfil{
+        padding-top: 120px;
+    }
+
+    .minha-cesta{
+        margin-top: -1880px;
+    }
+
+    .texto-cesta{
+        margin-top: -880px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .foto-perfil{
+        margin-left: 40px;
+    }
+
+    .dados-gerais{
+        left: 60px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .dados-gerais{
+        width: auto;
+        left: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .perfil{
+        font-size: 35px;
+    }
+
+    .minha-cesta{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .foto-perfil{
+        margin-left: 33px;
+    }
+
+    .texto-cesta h5{ 
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .foto-perfil{
+        margin-left: 23px;
+    }
+
+    .perfil{
+        padding-top: 85px;
+        padding-bottom: 7px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .foto-perfil{
+        margin-left: 16px;
+    }
+
+    .perfil{
+        font-size: 29px;
+    }
+
+    .minha-cesta{
+        font-size: 29px;
+    }
+    
+    .texto-cesta h5{
+        font-size: 16px;
+    }
+}

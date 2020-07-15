@@ -1,0 +1,24 @@
+
+<div class="container mb-5 text-geral">
+
+    <h1 class="display-4 text-titulo">Deletar produto</h1>
+
+    <div class="card-group">
+        <div class="card-body">
+            <h5 class="card-title">Nome : {{produto.nome}} </h5>
+            <h6 class="card-text text-muted">ID : {{produto.id}}</h6>
+            <p class="card-text">Descrição : {{produto.descricao}} </p>
+            <p class="card-text">Link da foto : {{produto.foto}} </p>
+            <p class="card-text">Preço : {{produto.preco}} </p>
+            <p class="card-text">Quantidade em estoque : {{produto.qtdEstoque}} </p>
+
+        </div> <!-- card-body -->
+    </div> <!-- card-group -->
+
+    <h5 class="display-6 text-titulo">Tem certeza?</h5>
+    <div>
+        <button class="btn btn-outline-danger mr-3 " (click)="btnSim()">Sim</button>
+        <button class="btn btn-outline-success" (click)="btnNao()">Nao</button>
+    </div> <!-- botoes -->
+
+</div> <!-- container -->

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+
+.fundo {
+    background: #F9FBF9;
+}
+
+.row {
+    margin:auto; 
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 3em;
+    color:#575151;
+    margin-top: 2.5em;
+}
+
+h1, h5 {
+    font-family: 'Fredoka One', cursive;
+}
+
+p {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.texto-quem-somos{
+    margin-bottom: 1em   ;
+}
+
+.card-foto{
+    background: #F7F7F7;
+    box-shadow: #F7F7F7;
+    border: none;
+}
+
+.card-texto{
+    max-width: 25em;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.3s; 
+}
+
+.faLinkedin, .faGithub{
+    color: #27B7A8;
+}
+
+.faGithub:hover{
+    color: black;
+}
+
+.faLinkedin:hover{
+    color: #3b5998;
+}
+
+/* MEDIA QUERYS  */
+
+@media screen and (max-width: 991px){
+
+    h1{
+        margin-top: 1em;
+    }
+}       
+
+@media screen and (max-width: 410px){
+
+    
+}
+

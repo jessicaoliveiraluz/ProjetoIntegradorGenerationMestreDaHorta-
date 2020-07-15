@@ -1,0 +1,36 @@
+<div class="container">
+
+    <div class="row botoes">
+
+        <div class="col-md-6">
+
+            <h1 class="display-4 text-titulo">Editar</h1>
+
+            <div class="text-geral">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Nome do usuario"
+                        [(ngModel)]="usuario.nome">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail">Endereço de e-mail</label>
+                    <input type="text" class="form-control" id="exampleInputEmail" placeholder="Email"
+                        [(ngModel)]="usuario.email">
+                </div>
+
+                <!-- <div class="form-group">
+                    <label for="exampleInputSenha">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputSenha" placeholder="Senha"
+                        [(ngModel)]="usuario.senha">
+                </div> -->
+                <div class="form-group d-flex justify-content-between">
+                    <button type="button" class="btn btn-outline-success" (click)="salvar()">Editar</button>
+                    <button type="button" class="btn btn-outline-danger" (click)="cancelar()">Cancelar</button>
+                </div>
+            </div> <!-- geral -->
+
+        </div> <!-- col -->
+
+    </div> <!-- row -->
+
+</div> <!-- container -->

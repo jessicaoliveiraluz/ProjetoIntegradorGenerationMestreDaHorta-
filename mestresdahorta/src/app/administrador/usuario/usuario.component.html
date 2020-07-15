@@ -1,0 +1,44 @@
+<div class="container text-geral">
+
+    <div class="botoes mb-5">
+        <h2 class=" text-center text-titulo mb-3">Administrador</h2>
+        <div class="d-flex">
+            <button class="btn btn-outline-dark  active  flex-fill mb-2 mr-2"
+                [routerLink]="['/administrador/usuarios']">Usuários</button>
+            <button class="btn btn-outline-dark flex-fill  mb-2 mr-2"
+                [routerLink]="['/administrador/produtos']">Produtos</button>
+            <button class="btn btn-outline-dark flex-fill  mb-2"
+                [routerLink]="['/administrador/mensagens']">Mensagens</button>
+        </div>
+    </div>
+
+
+    <p class="display-4 text-center text-titulo">Tabela de Usuários</p>
+    <table class="table table-hover table-responsive-md">
+        <thead>
+            <tr class="text-geral bg-secondary text-light">
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">E-mail</th>
+                <!-- <th scope="col">Senha</th> -->
+                <th scope="col">Ações</th>
+
+            </tr>
+        </thead>
+        <tbody class="text-geral" *ngFor="let usuario of listaUsuarios">
+            <tr>
+                <th scope="row">{{usuario.id}}</th>
+                <td>{{usuario.nome}} </td>
+                <td>{{usuario.email}}</td>
+                <!-- <td>{{usuario.senha}}</td> -->
+
+                <td class="d-flex justify-content-between">
+                    <button type="button" class="btn  btn-warning mr-5 "
+                        [routerLink]="['/administrador/usuarios/editar', usuario.id]">Editar</button>
+                    <button type="button" class="btn  btn-danger"
+                        [routerLink]="['/administrador/usuarios/deletar', usuario.id]">Apagar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div> <!-- container -->

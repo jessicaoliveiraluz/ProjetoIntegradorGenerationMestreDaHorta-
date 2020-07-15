@@ -1,0 +1,59 @@
+/* IMPORTAÇÃO DAS FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+/* ESTILIZAÇÃO GERAL */
+
+h1, h2, p { 
+    font-family: 'Fredoka One', cursive;
+    color: #575151;    
+}
+
+p{
+    margin-top: 1em;
+}
+
+/* ESTILIZAÇÃO POR CLASSES  */
+
+
+.card img{
+    max-height: 128 px;
+
+}
+
+.botoes {
+    margin-top: 13.5em;
+    
+}
+.container{
+    
+    margin: 200px auto 100px auto;
+    font-family: 'Oxygen', sans-serif;  
+    letter-spacing: 2px;
+    font-weight: lighter
+}
+
+.card-title {
+    font-family:'Fredoka One', cursive;
+    letter-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+.card{
+    /* width: 12em; */
+    box-shadow: 2px 2px 3px #dddddd;
+    border-radius: 5px;
+    margin-top:50px;
+
+}
+
+
+/* MEDIA QUERYS  */
+
+@media screen and (max-width:991px) {
+    .botoes{
+        margin-top: 8em;
+    }
+}

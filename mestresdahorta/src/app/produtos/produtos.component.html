@@ -1,0 +1,106 @@
+<div class="container col-xl-12 col-lg-12 col-md-4 col-6" action="" id="filtro">
+
+    <div class="row justify-content-center d-flex">
+        <div class="form-group d-flex justify-content-center">
+            <label class="control-label pr-3 mr-5" id="filtrar-por-label">filtrar por</label>
+            <div>
+
+                <select name="txt_order ml-5" id="filtrar-por-select" size="1" class="fFiltro form-control input-sm">
+                    <option value="nome" selected="nome">nome</option>
+                    <option value="preco">preço</option>
+                </select>
+
+            </div>
+        </div>
+
+        <div class="form-group d-flex justify-content-center mr-0">
+            <label id="ordem-label" class="control-label mr-5 pr-3">ordem</label>
+            <div>
+
+                <select name="txt_order" id="ordem-select" size="1" class="fFiltro form-control input-sm ">
+                    <option value="desc" selected="">decresc.</option>
+                    <option value="asc">cresc.</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <div class="form-group d-flex justify-content-center">
+            <label id="npag-label" class="control-label mr-5 pr-3">nº de páginas</label>
+            <div>
+
+                <select name="txt_order" size="1" id="npag-select" class="fFiltro form-control input-sm">
+                    <option value="12" selected="12">12</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="40">40</option>
+
+                </select>
+
+            </div>
+        </div>
+
+        <button title="clique para mostrar todos os produtos" class="btn btn-outline-primary mx-5 mb-3 pb-0"
+            type="button" (click)="filtrarProdutos()" name="btFiltrar" id="filtrar" value="Filtrar">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-funnel-fill" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2z" />
+            </svg>
+        </button>
+    </div>
+</div>
+
+
+
+<div class="container" id="container-produtos">
+    <div class="row mb-5">
+        <div class="col-8 col-md-3 col-lg-3" *ngFor="let produto of listaProdutos">
+            <div class="card" id="card">
+                <div class="card-body">
+                    <figure class="img-legenda" [routerLink]="['/descricao', produto.id]">
+                        <img class="card-img img-fluid" src="{{produto.foto}}">
+                        <figcaption>
+                            <h4>mais detalhes? clique</h4>
+                        </figcaption>
+                    </figure>
+
+                    <h4 class="card-title text-center mt-4">{{produto.nome}}</h4>
+                    <p class="card-text mb-2"></p>
+
+                    <form method="post" action="">
+                        <div class="price text-success mt-3">
+                            <label for="name" class=" ml-1">R${{produto.preco}}</label>
+                            <input class="product-input1" type="number" value="1" min="1" max="20" step="1" />
+
+                        </div>
+                    </form>
+                    <button id="btn-comprar" type="button" class=" btn card-link mt-2 px-3">comprar</button>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-12 justify-content-center d-flex  mt-5 pt-5 ">
+            <span class="text-muted "> pág: {{pagina}}</span>
+        </div>
+        <div class="col-12 justify-content-center d-flex  mt-1">
+            <div class="row justify-content-center mt-5">
+                <nav aria-label="Page navigation shadow-lg">
+                    <button class="btn btn-outline-primary">
+                        <- </button>
+                            <button class="btn btn-primary" *ngFor="let pagina of arrayDePaginas"
+                                (click)="paginar(pagina)">{{pagina}}</button>
+                            <button class="btn btn-outline-primary"> -> </button>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+
+</div>

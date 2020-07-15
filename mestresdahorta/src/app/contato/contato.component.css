@@ -1,0 +1,90 @@
+/* ESTILIZAÇÕES GERAIS  */
+
+
+iframe{
+    margin-top: 45px;
+    width:480px;
+     height:300px
+}
+h1{
+    font-family: 'Fredoka One', cursive;  
+    color:#575151;
+}
+
+body{
+    width: 100%;
+    background: #F9FBF9 ;
+}
+label {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18pt;
+    font-weight: lighter;
+
+}
+p{
+    font-family: 'Oxygen', sans-serif; 
+}
+button{
+    font-family: 'Oxygen', sans-serif;
+    color: #575151;
+    /* color: black; */
+    background: #C8F2C8;
+    border: 1px solid #5D5D5D;
+    border-radius: 18px;
+    transition: color 0.5s;
+
+}
+
+button:hover{
+    color: darkgreen;
+    box-shadow: 1px 1px 4px gray;
+    font-weight: 700;
+}
+
+
+/* ESTILIZAÇÕES POR CLASEE  */
+
+
+
+.container{
+    margin-top: 190px;
+}
+
+
+/* MEDIA QUERYS  */
+
+
+@media only screen and (max-width: 990px){
+    .container{
+        margin-top: 80px;
+    }
+    iframe{
+        width:360px;
+        height:200px
+    }
+    @media only screen and (max-width: 420px){
+       
+        iframe{
+            
+            width:380px;
+            height:200px
+        }
+}
+@media only screen and (max-width: 390px){
+       
+    iframe{
+        
+        width:340px;
+        height:200px
+    }
+}
+@media only screen and (max-width: 325px){
+       
+    iframe{
+        
+        width:300px;
+        height:200px
+    }
+}
+}
+

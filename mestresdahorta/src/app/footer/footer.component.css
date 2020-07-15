@@ -1,0 +1,76 @@
+/* Cofigaçoes geral */
+.page-footer{
+    background-color: #F7F7F7;
+    width: auto;
+}
+
+.text-titulo{
+    font-family: 'Fredoka One', cursive;
+    color: #575151;
+    font-weight: lighter;   
+}
+
+.text-geral{
+    font-family: 'Oxygen', sans-serif;
+    color: #575151;
+    font-weight: lighter;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clique a:hover{
+    color:  #27B7A8
+}
+
+/* borda */
+.linha {
+    width: 98%; /* coloque aqui a largura da linha */
+    border-top: 2px solid #27B7A8;
+    list-style-type: none;
+}
+
+/* Formas de pagamentos */
+.fotter-pagamentos{
+    border-color: #27B7A8;
+}
+
+/* Siga-nos */
+.faFacebook, .faInstagram {
+      color:  #27B7A8;
+  }
+ 
+ .faFacebook:hover{
+    color: #3b5998;
+ }
+ 
+ .faInstagram:hover{
+  color: #C13584;
+ }
+
+/* Copyright */
+.footer-copyright{
+    background-color: #27B7A8;
+}
+
+@media screen and (max-width: 991px){
+    #icones-rodape{
+        width: 100%;
+        left: 65px;
+    }
+}
+
+@media screen and (max-width: 782px){
+    #icones-rodape{
+        width: auto;
+        left: 40px;
+    }
+} 
+
+@media screen and (max-width: 767px){
+    #icones-rodape{
+        width: auto;
+        left: 0px;
+    }
+} 

@@ -1,0 +1,21 @@
+.botoes{
+    margin-top: 13em;
+  }
+  
+  .text-titulo{
+    font-family: 'Fredoka One', cursive;
+    color: #575151;
+    font-weight: lighter;   
+  }
+  .text-geral{
+    font-family: 'Oxygen', sans-serif;
+    color: #575151;
+    font-weight: lighter;
+  }
+  
+  
+  @media screen and (max-width: 991px) {
+    .botoes{
+        margin-top:5em;
+  }
+}

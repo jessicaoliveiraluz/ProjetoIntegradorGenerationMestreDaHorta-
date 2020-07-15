@@ -1,0 +1,26 @@
+.container{
+    margin-top: 200px;
+    margin-bottom:200px
+  }
+  
+  .text-titulo{
+    font-family: 'Fredoka One', cursive;
+    color: #575151;
+    font-weight: lighter;   
+  }
+  .text-geral{
+    font-family: 'Oxygen', sans-serif;
+    color: #575151;
+    font-weight: lighter;
+  }
+  
+  .titulo-card {
+    font-weight: bolder;
+  }
+  
+  @media screen and (max-width:1000px) {
+      .container{
+          margin-top:60px;
+    }
+  }
+  

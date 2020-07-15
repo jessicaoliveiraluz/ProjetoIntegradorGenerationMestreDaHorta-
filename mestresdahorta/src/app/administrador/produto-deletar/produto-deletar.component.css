@@ -1,0 +1,25 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+
+.container{
+    margin-top: 13em;
+  }
+  
+  .text-titulo{
+    font-family: 'Fredoka One', cursive;
+    color: #575151;
+    font-weight: lighter;   
+  }
+  .text-geral{
+    font-family: 'Oxygen', sans-serif;
+    color: #575151;
+    font-weight: lighter;
+  }
+  
+  
+  @media screen and (max-width:991px) {
+      .container{
+          margin-top:8em;
+    }
+  }

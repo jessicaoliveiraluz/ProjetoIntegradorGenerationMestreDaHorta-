@@ -1,0 +1,91 @@
+<div class="container text-geral">
+
+    <div class="botoes mb-5">
+        <h2 class=" text-center text-titulo mb-3">Administrador</h2>
+        <div class="d-flex">
+            <button class="btn btn-outline-dark    flex-fill mb-2 mr-2"
+                [routerLink]="['/administrador/usuarios']">Usuários</button>
+            <button class="btn btn-outline-dark flex-fill active  mb-2 mr-2"
+                [routerLink]="['/administrador/produtos']">Produtos</button>
+            <button class="btn btn-outline-dark flex-fill  mb-2"
+                [routerLink]="['/administrador/mensagens']">Mensagens</button>
+        </div>
+    </div>
+
+    <p class="display-4 text-center text-titulo">Cadastre um produto</p>
+
+    <div class="row ">
+        <div class="col ">
+            <div class="form-group">
+                <label id="label" for="exampleFormControlInput1">Nome:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite aqui o nome"
+                    [(ngModel)]="produto.nome">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Imagem:</label>
+                <input type="text" class="form-control" id="url" placeholder="Digite aqui a URL da imagem"
+                    [(ngModel)]="produto.foto">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Descrição</label>
+                <input type="text" class="form-control" id="descricao" placeholder="Digite uma descrição para o produto"
+                    [(ngModel)]="produto.descricao">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Preço:</label>
+                <input type="text" class="form-control" id="preco" placeholder="Digite aqui o preço"
+                    [(ngModel)]="produto.preco">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Quantidade no estoque:</label>
+                <input type="text" class="form-control" id="qtd" placeholder="Digite aqui a quantidade no estoque"
+                    [(ngModel)]="produto.qtdEstoque">
+            </div>
+
+            <button class="btn btn-success" (click)="postProduto()">Cadastrar</button>
+
+        </div> <!-- col -->
+    </div> <!-- row cadastro -->
+
+    <h1 class="display-4 text-center text-titulo mt-5 mb-5">Produtos</h1>
+
+
+    <div *ngIf='alerta'>
+        <div class="alert alert-success" role="alert">
+            Produto deletado com sucesso!
+        </div>
+    </div>
+
+    <div class="row  mb-5">
+        <div class="col-md-3 col-sm-12 card mb-2" *ngFor="let produto of listaProdutos">
+            <div class="card-body text-geral">
+                <div class="card-title text-center text-titulo">
+                    <h4>{{produto.nome}}</h4>
+                </div>
+                <div>
+                    <img class="card-img-top" src="{{produto.foto}}" alt="imagem da fruta">
+                </div>
+                <div class="text-muted">
+                    <h4>Código: {{produto.id}}</h4>
+                </div>
+                <div> <span>Descrição: {{produto.descricao}}</span> </div>
+                <div>
+                    <span>Preço:&nbsp;R$&nbsp;{{produto.preco}},00</span>
+                </div>
+                <div>
+                    <span>Quantidade: {{produto.qtdEstoque}}</span>
+                </div>
+                <div class="d-flex justify-content-between mt-4">
+                    <button class="btn btn-outline-success"
+                        [routerLink]="['/administrador/produtos/editar', produto.id]">Editar</button>
+                    <button class="btn btn-outline-danger"
+                        [routerLink]="['/administrador/produtos/deletar', produto.id]">Apagar</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div> <!-- container -->

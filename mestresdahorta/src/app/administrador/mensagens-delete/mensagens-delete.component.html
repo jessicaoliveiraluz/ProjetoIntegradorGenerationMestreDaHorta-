@@ -1,0 +1,30 @@
+<div class="container text-geral">
+
+
+    <p class="display-4 text-center  topo text-titulo">Mensagens dos usuários</p>
+    <div class="card">
+        <div class="card-header">
+            <span>Código: </span> {{contato.id}}
+        </div>
+        <div class="card-header">
+            <span>Nome: </span> {{contato.nome}}
+        </div>
+        <div class="card-header">
+            <span>E-mail: </span> {{contato.email}}
+        </div>
+        <div class="card-header">
+            <span>Telefone: </span> {{contato.telefone}}
+        </div>
+        <div class="card-body">
+            <span>Mensagem: </span> {{contato.mensagem}}
+        </div>
+
+
+    </div>
+    <h5 class="display-6 text-titulo mt-3 mb-4">Tem certeza?</h5>
+    <div class="mb-5">
+        <button class="btn btn-outline-danger mr-3 " (click)="btnSim()">Sim</button>
+        <button class="btn btn-outline-success" (click)="btnNao()">Nao</button>
+    </div> <!-- botoes -->
+
+</div>

@@ -1,0 +1,109 @@
+/* Configurações gerais */
+
+a{
+    cursor: pointer;
+}
+.text-titulo{
+    font-family: 'Fredoka One', cursive;
+    color: #575151;
+    font-weight: lighter;   
+}
+.menu{
+    background: #E9FFE9;
+}
+
+/* Pesquisar */
+.pesquisar-form{
+    width: 90%;
+}
+.form-input {
+    width: 90%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form-button{
+    width: 10%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.form-input:hover{
+    /* border: 1px solid  #27B7A8 !important; */
+    box-shadow: 0 0 5px  #27B7A8 !important;  
+}
+
+/* Botões carrinho e perfil */
+.btn-perfil:hover{
+    /* border: 1px solid  #27B7A8 !important; */
+    box-shadow: 0 0 5px  #27B7A8 !important;       
+}
+.btn-carrinho:hover{
+    /* border: 1px solid  #27B7A8 !important; */
+    box-shadow: 0 0 5px  #27B7A8 !important;       
+}
+
+/* CARRINHO */
+.icones-carrinho{
+    filter: grayscale(1.0) opacity(0.6);
+}
+
+/* PERFIL */
+.icones-perfil{
+    filter: grayscale(1.0) opacity(0.6);
+}
+
+/* Itens da lista */
+.menu-componentes-itens{
+    border-color: #27B7A8 !important;
+}
+li:hover{
+    box-shadow:  0 .05rem 0   #27B7A8 inset !important;       
+}
+
+/* media query */
+
+@media screen and (max-width:550px){
+    .menu-cabecalho{
+        margin: 0em;
+        padding: 0em;
+    }
+    
+    .menu-pesquisar{
+        width: 50% !important;
+    }
+    .form-input {
+        width: 70% !important;
+    }
+    .form-button{
+        width: 2em;
+    }
+}
+
+@media screen and (max-width:450px){
+    .span-perfil{
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px){
+    .menu-pesquisar{
+        margin-left: 15px;
+    }
+
+    #simbolo-pesquisar{
+        height: 35px;
+    }
+
+    #simbolo-pesquisar fa-icon{
+        margin-left: -5px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .menu-pesquisar{
+        margin-left: 5px;
+    }
+}

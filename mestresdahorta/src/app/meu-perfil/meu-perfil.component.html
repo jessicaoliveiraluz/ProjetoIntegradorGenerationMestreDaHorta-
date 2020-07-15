@@ -1,0 +1,127 @@
+<div class="fundo-perfil">
+    <div class="container">
+
+        <!-- PERFIL -->
+
+        <div class="btn bg-transparent shadow-none w-100 perfil">
+            <fa-icon [icon]="faUsuario" class="faUsuario fa-1x"></fa-icon>
+            <span class="span-perfil text-center perfil"> perfil </span>
+        </div>
+
+        <div class="row mt-5 mb-5 w-100">
+
+            <div class="col-md-4 d-flex justify-content-center foto-perfil">
+                <div class="border-0" style="width: 18rem;">
+
+                    <div class="d-flex justify-content-center">
+                        <img class="card-img-top rounded-circle w-75" src="../../assets/img/perfil.jpg"
+                            alt="Imagem de capa do card">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title text-center mt-2 nome-sobrenome" *ngIf="dadoUsuario">{{nome}}</h5>
+
+                        <a href="#" type="file" class="form-control-file"
+                            class="btn btn-secondary d-flex justify-content-center mt-5" type="file" id="botao-editar"
+                            target="_blanck">Carregar foto</a>
+
+                        <a href="#" class="btn btn-secondary d-flex justify-content-center mt-2" id="botao-editar"
+                            target="_blanck">Editar
+                            Perfil</a>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM DO PERFIL -->
+
+            <!-- DADOS PESSOAIS -->
+            <div class="col-lg-8 col-md-8 col-sm-10 dados-gerais">
+                <p class="text-uppercase border-bottom w-100 sub-texto">Dados Pessoais</p>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputNome">Nome</label>
+                        <input type="text" class="form-control" id="inputNome" placeholder="{{nome}}">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputSobrenome">Sobrenome</label>
+                        <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputTelefone">Telefone</label>
+                        <input type="text" class="form-control" id="inputTelefone" placeholder="Telefone">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCpf">CPF</label>
+                        <input type="text" class="form-control" id="inputCpf" placeholder="CPF">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="titulo">Data de Nascimento:</label>
+                        <input class="form-control" type="date">
+                    </div>
+                </div>
+                <!-- FIM DADOS PESSOAIS -->
+
+                <!-- DADOS DA CONTA -->
+                <p class="text-uppercase border-bottom w-100 mt-5 sub-texto">Dados da Conta</p>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">E-mail</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="{{usuario}}">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Senha</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                    </div>
+                </div>
+                <!-- FIM DADOS DA CONTA -->
+
+                <!-- CONTATO -->
+                <p class="text-uppercase border-bottom w-100 mt-5 sub-texto">Contato</p>
+                <div class="form-group">
+                    <label for="inputAddress">Endereço</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Rua, nº">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Endereço 2</label>
+                    <input type="text" class="form-control" id="inputAddress2"
+                        placeholder="Apartamento, hotel, casa, etc.">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Cidade</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEstado">Estado</label>
+                        <select id="inputEstado" class="form-control">
+                            <option selected>Escolher...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputCEP">CEP</label>
+                        <input type="text" class="form-control" id="inputCEP">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-secondary w-100" id="botao-editar">Alterar</button>
+                <!-- FIM DO CONTATO -->
+            </div>
+
+        </div>
+
+        <hr class="linha">
+
+        <div class="btn bg-transparent shadow-none w-100 mt-5 minha-cesta">
+            <fa-icon [icon]="faCarrinho" class="faCarrinho fa-1x"></fa-icon>
+            <span class="text-center"> minha cesta </span>
+        </div>
+
+        <div class="text-center texto-cesta mt-5 mb-5">
+            <a href="/produtos" class="btn btn-link btn-lg active" role="button" aria-pressed="true">
+                <h5 class="text-center ">Sua cesta de compras está
+                    vazia.</h5>
+            </a>
+        </div>
+    </div>
+</div>
